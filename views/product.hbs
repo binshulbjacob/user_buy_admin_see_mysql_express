@@ -1,0 +1,28 @@
+<h1 class="text-center">PUBLISHED PRODUCTS</h1>
+
+<div class="container-fluid ">
+    <table border="1" class="mt-3">
+        <tr>
+            <th>author</th>
+            <th>bookname</th>
+            <th>price</th>
+            <th>publishdate</th>
+            <th>quantity</th>
+            <th>review</th>
+        </tr>
+        {{#each data6}}
+        <tr>
+            <td>{{this.author}}</td>
+            <td>{{this.bookname}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.publishdate}}</td>
+            <td>{{this.quantity}}</td>
+            <td>
+           <a href="/edit/{{this.nid}}" class="btn btn-success">EDIT</a>
+           <a href="/delete/{{this.nid}}" class="btn btn-danger">DELETE</a>
+           </td>
+        </tr>
+            {{/each}}
+    </table>
+
+</div>

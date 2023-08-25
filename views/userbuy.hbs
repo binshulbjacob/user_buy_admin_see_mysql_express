@@ -1,0 +1,22 @@
+<h1 class="text-center">admin show user purchase</h1>
+
+<div class="container-fluid ">
+     <a href="logout" class="btn btn-success">logout</a>
+    <table border="1" class="mt-3">
+    <tr>
+            <th>authorid</th>
+            <th>author</th>
+            <th>client</th>
+    </tr>
+                   {{#each data9}}
+                   <tr>
+                    <td>{{this.authorid}}</td>
+                    <td>{{this.author}}</td>
+                    <td>
+           <a href="/approve/{{this.nid}}" class="btn btn-success">approve</a>
+           </td>
+        </tr>
+            {{/each}}
+    </table>
+
+</div>

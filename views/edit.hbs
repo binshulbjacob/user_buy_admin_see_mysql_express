@@ -1,0 +1,17 @@
+<div class="container w-50"> <br>
+<h1 class="text-center">PRODUCT FORM</h1>
+{{#each data}}
+<form method="post" class="form-control" action="/edit2/{{this.nid}}">
+ 
+
+    <input type="text" class="form-control" name="author" placeholder="author" value="{{this.author}}"><br>
+    <input type="text" class="form-control" name="bookname" placeholder="book " value="{{this.bookname}}"><br>
+    <input type="text" class="form-control" name="price" placeholder="price" value="{{this.price}}"><br>
+     <input type="date" class="form-control" name="publishdate" value="{{this.publishdate}}">
+    <input type="text" class="form-control" name="quantity" placeholder="quantity"value="{{this.quantity}}"><br>
+     
+
+    <input class="btn btn-danger" type="submit">
+    {{/each}}
+    </form>
+    </div>
